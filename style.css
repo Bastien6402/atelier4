@@ -1,0 +1,99 @@
+/* Police de caractères appliquée à toutes les balises du site */
+* {
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #add8e6;
+}
+
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2em;
+}
+
+h2 {
+    color: #34495e;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+
+kbd {
+    background-color: #eee;
+    color: #333;
+    padding: 2px 4px;
+    border-radius: 2px;
+    border: 1px solid gray;
+    font-weight: bold;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+
+p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 10px 0;
+}
+.menu {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block; 
+    margin: 0 10px; 
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    border-radius: 5px;
+    
+}
