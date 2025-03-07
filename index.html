@@ -1,17 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord - Simulateur de Vol</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<ul class="menu">
-<li><a href="index.html">Accueil</a></li>
-<li><a href="manual.html">Manuel</a></li>
-</ul>
- 
-    <img src="img/maquette.png" alt="Cette maquette représente un simulateur de vol avec des appareils de mesure comme une manette des gaz, un joystick , un altimètre, horizon artificiel , variomètre, indicateur de cap ">
+    <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="manual.html">Manuel</a></li>
+    </ul>
+
+    <h1>Tableau de Bord</h1>
+
+    <div class="tableau-de-bord">
+        <div class="instrument" id="altimetre">
+            <h2>Altimètre</h2>
+            <p>Altitude: <span id="val-altimetre">0</span> m</p>
+        </div>
+
+        <div class="instrument" id="joystick">
+            <h2>Joystick</h2>
+            <p>Position: <span id="val-joystick">Neutre</span></p>
+        </div>
+
+        <div class="instrument" id="indicateur-vitesse">
+            <h2>Indicateur de Vitesse</h2>
+            <p>Vitesse: <span id="val-vitesse">0</span> km/h</p>
+        </div>
+
+        <div class="instrument" id="horizon-artificiel">
+            <h2>Horizon Artificiel</h2>
+            <p>Inclinaison: <span id="val-horizon">Stable</span></p>
+        </div>
+
+        <div class="instrument" id="variometre">
+            <h2>Variomètre</h2>
+            <p>Vitesse verticale: <span id="val-variometre">0</span> m/s</p>
+        </div>
+
+        <div class="instrument" id="indicateur-cap">
+            <h2>Indicateur de Cap</h2>
+            <p>Cap: <span id="val-cap">0</span>°</p>
+        </div>
+
+        <div class="instrument" id="manette-gaz">
+            <h2>Manette des Gaz</h2>
+            <p>Puissance: <span id="val-gaz">0</span>%</p>
+        </div>
+    </div>
+
+    <img src="img/maquette.png" alt="Cette maquette représente un simulateur de vol avec des appareils de mesure comme une manette des gaz, un joystick , un altimètre, horizon artificiel , variomètre, indicateur de cap.">
+
+    <script src="script.js"></script> <!-- Lien vers le fichier JS -->
 </body>
 </html>
