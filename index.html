@@ -3,56 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tableau de Bord - Simulateur de Vol</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Superposition d'images</title>
+    <style>
+        .instrument {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            position: relative;
+        }
+        .fond {
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            z-index: 1;
+        }
+        .couche {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+        .premier-plan {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+        }
+    </style>
 </head>
 <body>
-    <ul class="menu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="manual.html">Manuel</a></li>
-    </ul>
-
-    <h1>Tableau de Bord</h1>
-
-    <div class="tableau-de-bord">
-        <div class="instrument" id="altimetre">
-            <h2>Altimètre</h2>
-            <p>Altitude: <span id="val-altimetre">0</span> m</p>
-        </div>
-
-        <div class="instrument" id="joystick">
-            <h2>Joystick</h2>
-            <p>Position: <span id="val-joystick">Neutre</span></p>
-        </div>
-
-        <div class="instrument" id="indicateur-vitesse">
-            <h2>Indicateur de Vitesse</h2>
-            <p>Vitesse: <span id="val-vitesse">0</span> km/h</p>
-        </div>
-
-        <div class="instrument" id="horizon-artificiel">
-            <h2>Horizon Artificiel</h2>
-            <p>Inclinaison: <span id="val-horizon">Stable</span></p>
-        </div>
-
-        <div class="instrument" id="variometre">
-            <h2>Variomètre</h2>
-            <p>Vitesse verticale: <span id="val-variometre">0</span> m/s</p>
-        </div>
-
-        <div class="instrument" id="indicateur-cap">
-            <h2>Indicateur de Cap</h2>
-            <p>Cap: <span id="val-cap">0</span>°</p>
-        </div>
-
-        <div class="instrument" id="manette-gaz">
-            <h2>Manette des Gaz</h2>
-            <p>Puissance: <span id="val-gaz">0</span>%</p>
-        </div>
+    <div class="instrument">
+        <img src="chemin/vers/image_fond.png" id="fond" class="fond" alt="Image de fond">
+        <img src="chemin/vers/image_couche1.png" id="couche1" class="couche" alt="Couche 1">
+        <img src="chemin/vers/image_couche2.png" id="couche2" class="couche" alt="Couche 2">
+        <img src="chemin/vers/image_premier_plan.png" id="premier_plan" class="premier-plan" alt="Premier plan">
     </div>
-
-    <img src="img/maquette.png" alt="Cette maquette représente un simulateur de vol avec des appareils de mesure comme une manette des gaz, un joystick , un altimètre, horizon artificiel , variomètre, indicateur de cap.">
-
-    <script src="script.js"></script> <!-- Lien vers le fichier JS -->
 </body>
 </html>
